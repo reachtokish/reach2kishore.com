@@ -76,7 +76,7 @@ npm install -D react react-dom
 
 We are done with installation part. Now is the time to setup our webpack. To do so we have to create a file called `webpack.config.js` in the root of the `my-react-app` directory and paste the following code inside that file
 
-```js
+```javascript{ numberLines: true }
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -84,7 +84,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 Coming to the setup of `entry` and `output` point of our application. To do so paste the following code after the imports
 
-```js
+```javascript{ numberLines: true }
 ...
 module.exports = {
   mode: 'development',
@@ -104,7 +104,7 @@ module.exports = {
 
 So now we need to let `webpack` know that we are going to use `babel` to compile our code so that it can support most of the browsers. To do so we have to add the below code in `webpack.config.js`
 
-```js
+```javascript{ numberLines: true }
 ...
 module.exports = {
   ...
@@ -124,7 +124,7 @@ module.exports = {
 
 Now we need few plugin setup for webpack. Paste the following code below the babel configuration mentioned above
 
-```js
+```javascript{ numberLines: true }
 ...
 module.exports = {
   ...
@@ -142,7 +142,7 @@ module.exports = {
 
 So the full `webpack.config.js` file should look like the following code now
 
-```js
+```javascript{ numberLines: true }
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -177,7 +177,7 @@ module.exports = {
 
 Now we are done with the webpack setup. We have to make a very small babel setup. Create a `.babelrc` file in the root of our folder and paste the below code inside that
 
-```js
+```javascript{ numberLines: true }
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
@@ -205,7 +205,7 @@ my-react-app
 
 Now open the `index.html` file in you editor which is present inside `public` directory and paste the following code
 
-```html
+```html{ numberLines: true }
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -223,7 +223,7 @@ Now open the `index.html` file in you editor which is present inside `public` di
 
 Now open the `index.js` file inside `src` folder and paste the following piece of code
 
-```js
+```javascript{ numberLines: true }
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './app';
@@ -233,7 +233,7 @@ ReactDom.render(<App />, document.getElementById("root"))
 
 To create the app component paste the following code inside your `app.js` in `src` folder
 
-```js
+```javascript{ numberLines: true }
 import React from 'react';
 
 function App() {
@@ -249,7 +249,7 @@ export default App;
 
 Now we are almost there to run our newly created `react` project in the browser. Before doing that we need to add following piece of code inside our `package.json` `scripts` field.
 
-```json
+```json{ numberLines: true }
 {
   ...
   "scripts": {
