@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import calendar from '../images/calendar.svg';
@@ -24,9 +24,31 @@ const BlogDate = styled.span`
   }
 `;
 
+const Pager = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  div {
+    width: 30%;
+    a {
+      text-decoration: none;
+      &.next {
+        text-align: right;
+      }
+      h4 {
+        margin: 0 0 10px
+      }
+      p {
+        line-height: 24px;
+      }
+    }
+  }
+`;
+
 export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
+  data, pageContext
 }) {
+  console.log(pageContext);
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
@@ -40,6 +62,28 @@ export default function Template({
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
       />
+      <hr />
+      <Pager>
+        <div className="prev">
+          {pageContext.prev && (
+            <Link to={pageContext.prev.frontmatter.slug}>
+              <h4>Prev</h4>
+              <p>{pageContext.prev.frontmatter.title}</p>
+            </Link>
+          )}
+        </div>
+        <div style={{textAlign: "center"}}>
+          <Link to="/">Home</Link>
+        </div>
+        <div className="next">
+          {pageContext.next && (
+            <Link to={pageContext.next.frontmatter.slug}>
+              <h4>Next</h4>
+              <p>{pageContext.next.frontmatter.title}</p>
+            </Link>
+          )}
+        </div>
+      </Pager>
     </Layout>
   )
 }
