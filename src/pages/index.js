@@ -64,7 +64,11 @@ const IndexPage = () => {
   const { allMarkdownRemark: { edges: allBlogs } } = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(filter: { frontmatter: { slug: { regex: "/blog/" } } }) {
+        allMarkdownRemark(
+          filter: { frontmatter: { slug: { regex: "/blog/" } } },
+          sort: { fields: [frontmatter___date], order: DESC },
+          limit: 3
+        ) {
           edges {
             node {
               html
@@ -125,11 +129,12 @@ const IndexPage = () => {
           </li>
         ))}
       </ul>
+      <Link to="/all-blogs">All writings</Link>
     </Blogs>
 
     <ReachOut>
       <h2>Reach me out</h2>
-      <p><a href="tel:+91 9748591585">+91 9748591585</a> . <a href="mailto:patra.kishore65@gmail.com">patra.kishore65@gmail.com</a></p>
+      <p><a href="mailto:patra.kishore65@gmail.com">patra.kishore65@gmail.com</a></p>
       <p>
         <a href="https://github.com/reachtokish" target="_blank" rel="noopener noreferrer">Github</a> .&nbsp;
         <a href="https://www.linkedin.com/in/reachtokish/" target="_blank" rel="noopener noreferrer">Linkedin</a> .&nbsp;
