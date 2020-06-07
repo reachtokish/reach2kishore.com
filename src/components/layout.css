@@ -678,3 +678,6 @@ a:hover {
   padding-left: 2.8em;
   overflow: initial;
 }
+:not(pre)>code[class*=language-] {
+  padding: .1em .3em;
+}

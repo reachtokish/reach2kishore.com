@@ -70,6 +70,8 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <meta property="og:site_name" content="reach2kishore.com" />
+      <meta property="og:image" itemprop="image" content={favicon} />
       <link rel="icon" href={favicon} />
     </Helmet>
   )

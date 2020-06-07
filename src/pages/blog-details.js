@@ -48,7 +48,7 @@ const Pager = styled.div`
 export default function Template({
   data, pageContext
 }) {
-  console.log(pageContext);
+  // console.log(pageContext);
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (

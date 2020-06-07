@@ -137,13 +137,12 @@ const IndexPage = () => {
       <p><a href="mailto:patra.kishore65@gmail.com">patra.kishore65@gmail.com</a></p>
       <p>
         <a href="https://github.com/reachtokish" target="_blank" rel="noopener noreferrer">Github</a> .&nbsp;
-        <a href="https://www.linkedin.com/in/reachtokish/" target="_blank" rel="noopener noreferrer">Linkedin</a> .&nbsp;
-        <a href="https://www.facebook.com/kishore.patra.334" target="_blank" rel="noopener noreferrer">Facebook</a> .&nbsp;
-        <a href="https://www.instagram.com/reach2kishore/" target="_blank" rel="noopener noreferrer">Instagram</a> .&nbsp;
-        <a href="https://www.npmjs.com/~reachtokish" target="_blank" rel="noopener noreferrer">Npm</a> .&nbsp;
-        <a href="https://twitter.com/reachtokish" target="_blank" rel="noopener noreferrer">Twitter</a> .&nbsp;
         <a href="https://medium.com/@patra.kishore65" target="_blank" rel="noopener noreferrer">Medium</a> .&nbsp;
-        <a href="https://dev.to/reachtokish" target="_blank" rel="noopener noreferrer">Dev.to</a>
+        <a href="https://dev.to/reachtokish" target="_blank" rel="noopener noreferrer">Dev.to</a> .&nbsp;
+        <a href="https://www.npmjs.com/~reachtokish" target="_blank" rel="noopener noreferrer">Npm</a> .&nbsp;
+        <a href="https://stackoverflow.com/users/4291123/reachtokish" target="_blank" rel="noopener noreferrer">Stackoverflow</a> .&nbsp;
+        <a href="https://www.linkedin.com/in/reachtokish/" target="_blank" rel="noopener noreferrer">Linkedin</a> .&nbsp;
+        <a href="https://twitter.com/reachtokish" target="_blank" rel="noopener noreferrer">Twitter</a>
       </p>
     </ReachOut>
   </Layout>

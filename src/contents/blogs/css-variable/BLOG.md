@@ -123,3 +123,5 @@ Modify variable value inside media queries
 ## Conclusion
 
 CSS has evolved a lot now for the past few years. There are a lot of other features that have been introduced to CSS. Stay tuned, will cover all those features in my upcoming posts. Thanks for reading!!
+
+Let me know what your thought on this post by messaging me on [twitter](https://twitter.com/reachtokish) or [linkedin](https://www.linkedin.com/in/reachtokish/).

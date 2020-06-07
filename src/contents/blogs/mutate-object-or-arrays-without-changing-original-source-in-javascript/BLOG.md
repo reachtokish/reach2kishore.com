@@ -155,3 +155,5 @@ There are other 2 advanced features. One is [Autovivification](https://github.co
 There are other libraries that solve immutability in a great way. I personally know about [immutable-js](https://immutable-js.github.io/immutable-js/), which is great in its own way. You can try both and find which suits your project best. I personally used [Immutability Helper](https://immutable-js.github.io/immutable-js/) multiple times and thus I'm comfortable with this library. You can try whatever you want.
 
 Thanks for reading!
+
+Let me know what your thought on this post by messaging me on [twitter](https://twitter.com/reachtokish) or [linkedin](https://www.linkedin.com/in/reachtokish/).

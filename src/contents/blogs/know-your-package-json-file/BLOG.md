@@ -97,3 +97,5 @@ Without much reading will directly jump to the list of options
 ## Conclusion
 
 This is very much important to know the basics when you are building something. And package.json holds a lot of basic configuration which has a potential value for our project. There are a lot of other options you can configure using package.json which I could not cover as the list will never end so whenever you are getting a new term just do google it.
+
+Let me know what your thought on this post by messaging me on [twitter](https://twitter.com/reachtokish) or [linkedin](https://www.linkedin.com/in/reachtokish/).

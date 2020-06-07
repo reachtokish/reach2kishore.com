@@ -85,3 +85,5 @@ https://github.com/reachtokish/rctx-contextmenu
 I think we have covered pretty much very basic features but there is a lot of other features that you can explore from the official plugin page.
 
 I hope you have liked my first ever blog. If you have really liked it please do clap and share it publicly. Thanks for reading, it means a lot to me!
+
+Let me know what your thought on this post by messaging me on [twitter](https://twitter.com/reachtokish) or [linkedin](https://www.linkedin.com/in/reachtokish/).

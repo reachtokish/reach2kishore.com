@@ -274,3 +274,5 @@ You can also use `npm run build` - command to build your application. Built file
 This is a very basic react project we have setup using webpack and babel. There are other configurations which you might need while building an enterprise application. In that note I would suggest you to explore more options from [webpack](https://webpack.js.org/) and [babel](https://babeljs.io/) official website.
 
 I hope the above content helped you to get a basic understanding of how to setup react app with webpack and babel. Thanks for reading!!
+
+Let me know what your thought on this post by messaging me on [twitter](https://twitter.com/reachtokish) or [linkedin](https://www.linkedin.com/in/reachtokish/).
