@@ -12,7 +12,7 @@ const BlogDate = styled.span`
   font-size: 14px;
   padding: 5px 10px;
   border-radius: 4px;
-  width: 140px;
+  width: 180px;
   margin-bottom: 10px;
   justify-content: center;
   img {
