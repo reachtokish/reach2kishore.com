@@ -1,5 +1,5 @@
 ---
-slug: "/blog/my-journey-towards-software-development"
+slug: "/cooking/my-journey-towards-software-development"
 date: "2020-08-24"
 title: "My journey towards software development"
 author: "Kishore Patra"

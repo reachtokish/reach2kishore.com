@@ -441,8 +441,8 @@ blockquote {
   margin-top: 0;
   margin-bottom: 1.45rem;
   padding: 20px 0 20px 20px;
-  background-color: rgba(0,0,0,0.5);
-  border-left: solid 4px #fff;
+  background-color: var(--blockquoteBg);
+  border-left: solid 4px var(--anchorColor);
 }
 form {
   margin-left: 0;
@@ -628,19 +628,30 @@ pre tt:after {
 }
 
 body {
-  background-color: #0F141A;
+  --bg: #fff;
+  --textNormal: #0F141A;
+  --anchorColor: #9000FF;
+  --blockquoteBg: rgba(0, 0, 0, 0.05);
+
+  background-color: var(--bg);
+}
+body.dark {
+  --bg: #0F141A;
+  --textNormal: #fff;
+  --anchorColor: #F9B31C;
+  --blockquoteBg: rgba(0, 0, 0, 0.5);
 }
 body,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
-  color: #fff;
+  color: var(--textNormal);
 }
 img {
   margin: 0;
   max-width: 100%;
 }
 a {
-  color: #F9B31C;
+  color: var(--anchorColor);
 }
 a:hover {
   text-decoration: none;
@@ -680,4 +691,10 @@ a:hover {
 }
 :not(pre)>code[class*=language-] {
   padding: .1em .3em;
+}
+.theme-toggler {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-transform: capitalize;
 }

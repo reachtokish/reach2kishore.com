@@ -4,23 +4,26 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import calendar from '../images/calendar.svg';
 import styled from 'styled-components';
+import { CalendarIcon } from './../components/icons';
 
 const BlogDate = styled.span`
   display: flex;
   align-items: center;
-  background-color: #9100ff;
+  background-color: var(--anchorColor);
+  color: var(--bg);
   font-size: 14px;
   padding: 5px 10px;
   border-radius: 4px;
   width: 180px;
   margin-bottom: 10px;
   justify-content: center;
-  img {
+  svg {
     width: 15px;
     height: 15px;
     display: block;
     margin-right: 10px;
     margin-top: -3px;
+    fill: var(--bg);
   }
 `;
 
@@ -55,7 +58,7 @@ export default function Template({
     <Layout>
       <SEO title={frontmatter.title} />
       <BlogDate>
-        <img src={calendar} alt="Calendar icon" />
+        <CalendarIcon />
         {frontmatter.date}
       </BlogDate>
       <div
