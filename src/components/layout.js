@@ -38,7 +38,9 @@ const Layout = ({ children, noHeader }) => {
               <label>
                 <input
                   type="checkbox"
-                  onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                  onChange={e => {
+                    toggleTheme(e.target.checked ? 'dark' : 'light');
+                  }}
                   checked={theme === 'dark'}
                 />{' '}
                 {theme} mode
